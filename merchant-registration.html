@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. https://www.webflow.com  -->
-<!--  Last Published: Tue Feb 28 2023 06:28:54 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Tue Feb 28 2023 08:45:16 GMT+0000 (Coordinated Universal Time)  -->
 <html
   data-wf-page="63fd9bc3887a80742c33aad9"
   data-wf-site="63f211c0466e62ea1d5ddb3b"
@@ -79,12 +79,13 @@
           </div>
           <div class="form-block w-form">
             <form
-              id="wf-form-Merchant-Form"
               data-netlify="true"
+              id="wf-form-Merchant-Form"
               name="wf-form-Merchant-Form"
               data-name="Merchant Form"
-              method="POST"
+              method="post"
               class="form-2"
+              action="/registration-success.html/"
             >
               <div class="text-input-container-2">
                 <label for="email" class="field-label-form-2"
@@ -106,7 +107,7 @@
                 >
                 <div class="div-block-8">
                   <input
-                    type="text"
+                    type="number"
                     class="text-field-form-2 country-code w-input"
                     maxlength="256"
                     name="Country-Code"
@@ -219,9 +220,12 @@
                   required=""
                 />
               </div>
-              <button type="submit" class="submit-button-2 w-button">
-                Submit
-              </button>
+              <input
+                type="submit"
+                value="Submit"
+                data-wait="Please wait..."
+                class="submit-button-2 w-button"
+              />
             </form>
             <div class="text-block-8">
               For <span class="text-span-5">Mobile Application Demo</span> &amp;
@@ -246,7 +250,7 @@
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="js/webflow.js" type="text/javascript"></script> -->
+    <script src="js/webflow.js" type="text/javascript"></script>
     <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   </body>
 </html>
